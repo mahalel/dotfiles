@@ -1,1 +1,1 @@
-alias myip = 'curl ifconfig.me'
+alias myip='curl ifconfig.me'
