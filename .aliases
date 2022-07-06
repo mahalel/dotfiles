@@ -1,1 +1,2 @@
 alias myip='curl ifconfig.me'
+alias gd='git diff'
