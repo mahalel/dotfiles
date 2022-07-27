@@ -134,3 +134,4 @@ if [ $(ps ax | grep "[s]sh-agent" | wc -l) -eq 0 ] ; then
         ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
     fi
 fi
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
