@@ -14,8 +14,6 @@
   defaultBranch = main
 [web]
   browser = firefox
-[credential]
-  helper = osxkeychain
 [push]
   default = simple
 [merge]
