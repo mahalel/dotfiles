@@ -2,6 +2,7 @@ alias myip="curl -s ifconfig.me/all.json | jq -c '.ip_addr'"
 alias ls='ls -latrh'
 
 # Git aliases.
+alias ga='git add'
 alias gs='git status'
 alias gcm='git commit -m "'
 alias gd='git diff'
