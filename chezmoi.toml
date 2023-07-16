@@ -1,0 +1,10 @@
+[edit]
+    command = "hx"
+
+[diff]
+    command = "difft"
+    args = ["{{ .Destination }}", "{{ .Target }}"]
+
+[git]
+    autoCommit = true
+    autoPush = true
