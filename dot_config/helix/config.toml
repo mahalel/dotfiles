@@ -1,0 +1,24 @@
+theme = "onedark"
+
+[editor]
+line-number = "relative"
+true-color = true
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+"g" = { "e" = "goto_last_line" }
+
+[keys.normal."+"]
+p = ":run-shell-command /home/maha/scripts/gpf.sh"
+g = ":pipe /home/maha/scripts/ghettopilot.sh"
+
+[keys.select]
+"g" = { "e" = "goto_file_end" }
