@@ -1,6 +1,7 @@
 [user]
   name = Andrei Mahalean
   email = andrei@maha.nz
+	signingkey = 969304C6F060A724
 [core]
   editor = vim
   excludesfile = ~/.gitignore
@@ -16,6 +17,7 @@
   browser = firefox
 [push]
   default = simple
+	autoSetupRemote = true
 [merge]
   tool = kdiff3
 [difftool]
@@ -32,3 +34,7 @@
 	rebase = true
 [diff]
 	external = difft
+[credential]
+	helper = store
+[commit]
+	gpgsign = true

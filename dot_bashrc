@@ -138,3 +138,7 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
+export GPG_TTY=$(tty)
+export PATH=$PATH:$HOME/.tfenv/bin
+
+# test
