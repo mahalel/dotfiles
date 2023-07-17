@@ -141,4 +141,4 @@ fi
 export GPG_TTY=$(tty)
 export PATH=$PATH:$HOME/.tfenv/bin
 
-# test
+PS1='\[$(tput setaf 226)\]($(git branch 2>/dev/null | grep  ^*  | colrm 1 2))\[$(tput setaf 34)\]\u\[$(tput setaf 40)\]@\[$(tput setaf 46)\]\h \[$(tput setaf 154)\]\w\[$(tput sgr0)\]$ '
