@@ -3,7 +3,7 @@
   email = andrei@maha.nz
 	signingkey = 969304C6F060A724
 [core]
-  editor = vim
+  editor = helix
   excludesfile = ~/.gitignore
   autocrlf = input
 [color]
