@@ -1,24 +1,101 @@
-theme = "onedark"
+theme = "catppuccin_macchiato"
 
 [editor]
+auto-pairs = false
+bufferline = "always"
+color-modes = true
+completion-replace = true
+completion-trigger-len = 1
+cursorline = true
+idle-timeout = 0
 line-number = "relative"
-true-color = true
+middle-click-paste = true
 mouse = false
+rulers = [120]
+text-width = 120
+scroll-lines = 10
+true-color = true
+
+[editor.statusline]
+center = ["total-line-numbers", "version-control"]
+left = ["mode", "spinner", "file-name", "file-modification-indicator"]
+mode.insert = "INSERT"
+mode.normal = "NORMAL"
+mode.select = "SELECT"
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+
+# [editor.lsp]
+# display-messages = true
+# auto-signature-help = true
+# display-signature-help-docs = true
+# display-inlay-hints = true
 
 [editor.cursor-shape]
-insert = "bar"
 normal = "block"
+insert = "bar"
 select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
 
 [editor.file-picker]
 hidden = false
+git-ignore = true
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 30
+
+[editor.whitespace.render]
+space = "none"
+nbsp = "none"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
 
 [keys.normal]
 "g" = { "e" = "goto_last_line" }
+minus = "file_picker_in_current_buffer_directory"
+X = ["extend_line_up", "extend_to_line_bounds"]
+# C-left = ":buffer-previous"
+# C-right = ":buffer-next"
+ret = "increment"
+backspace = "decrement"
+tab = ":buffer-next"
+S-tab = ":buffer-previous"
+C-x = ":buffer-close"
+A-k = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 
 [keys.normal."+"]
-p = ":run-shell-command /home/maha/scripts/gpf.sh"
-g = ":pipe /home/maha/scripts/ghettopilot.sh"
+# p = ":run-shell-command /home/maha/scripts/gpf.sh"
+# g = ":pipe /home/maha/scripts/ghettopilot.sh"
 
 [keys.select]
 "g" = { "e" = "goto_file_end" }
+S-down = "goto_next_paragraph"
+S-left = "goto_line_start"
+S-right = "goto_line_end"
+S-up = "goto_prev_paragraph"
+u = "switch_to_lowercase"
+U = "switch_to_uppercase"
+X = ["extend_line_up", "extend_to_line_bounds"]
+
+[keys.normal.space.t]
+"." = ":toggle file-picker.hidden"
+
+
