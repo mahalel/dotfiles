@@ -1,7 +1,7 @@
 theme = "catppuccin_macchiato"
 
 [editor]
-auto-pairs = false
+auto-pairs = true
 bufferline = "always"
 color-modes = true
 completion-replace = true

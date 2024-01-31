@@ -8,6 +8,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias hx='helix'
+
 # Git aliases.
 alias ga='git add -A'
 alias gs='git status'
