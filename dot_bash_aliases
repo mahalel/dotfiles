@@ -1,7 +1,12 @@
 alias myip="curl -s ifconfig.me/all.json | jq -c '.ip_addr'"
-alias cheat="curl cheat.sh/"
 
+function cheat() { curl -m 7 "http://cheat.sh/$1"; }
+
+# some more ls aliases
 alias ls='ls -latrh'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
 # Git aliases.
 alias ga='git add -A'
@@ -9,11 +14,6 @@ alias gs='git status'
 alias gd='git diff'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 alias bfg='java -jar /usr/local/bin/bfg.jar'
-
-alias vim='helix'
-alias v='helix'
-alias h='helix'
-alias hx='helix'
 
 alias tfapply='time terraform apply -parallelism=50 tfplan'
 alias tfplan='terraform plan -out=tfplan -parallelism=50'
