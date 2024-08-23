@@ -84,6 +84,7 @@ A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 [keys.normal."+"]
 # p = ":run-shell-command /home/maha/scripts/gpf.sh"
 # g = ":pipe /home/maha/scripts/ghettopilot.sh"
+e = ":insert-output echo 'if err != nil {\n\tfmt.Println(err)\n}'"
 
 [keys.select]
 "g" = { "e" = "goto_file_end" }

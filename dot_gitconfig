@@ -3,7 +3,7 @@
   email = andrei@maha.nz
   signingkey = 969304C6F060A724
 [core]
-  editor = helix
+  editor = hx
   excludesfile = ~/.gitignore
   autocrlf = false
 [color]
@@ -12,8 +12,7 @@
   interactive = auto
   status = auto
 [init]
-  defaultBranch = main
-  templateDir = /home/maha/.git-template
+	defaultBranch = main
 [web]
   browser = firefox
 [push]
